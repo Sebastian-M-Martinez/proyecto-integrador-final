@@ -1,0 +1,25 @@
+### TRAER TAREAS
+GET http://localhost:3000/api/tasks
+
+### CREAR TAREAS
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+     "title" : "y otro titulo",
+     "description" : "nueva descripcion",
+     "poster" : "https://www.google.com"
+}
+
+### ELIMINAR TAREA
+DELETE http://localhost:3000/api/tasks/1
+
+### MODIFICAR TAREA
+PUT  http://localhost:3000/api/tasks/5
+Content-Type: application/json
+
+{
+     "title" : "otro titulo",
+     "description" : "nueva descripcion",
+     "poster" : "www.url.com"
+}
